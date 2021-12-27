@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="container-fluid">
+    <h1 class="mapa-web-title">Mapa Web</h1>
+    <div class="v-spacing">
+        <button id="showAll" class="btn btn-primary">Mostrar todo</button>
+        <button id="HideAll" class="btn btn-secondary">Esconder todo</button><br />
+        <div class=" col-xs-6 input-group v-spacing">
+            <input class="form-control " type="text" id="search">
+            <span class="input-group-btn">
+                <button class=" btn btn-default glyphicon glyphicon-search"></button>
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="vsitemap" id="vsitemap">
+        <ul>
+            <li><a class="main-node" data-href="zaragoza.es/sede/" href="https://www.zaragoza.es/sede/">Sede</a>
+                <ul>
+                    <!-- href="/sede/portal/gobierno-abierto/" -->
+                    <li class="Gobierno-abierto">
+                        <div class="link-box">
+                            <a data-href="/portal/gobierno-abierto/" href="/sede/portal/gobierno-abierto/">Gobierno
+                                Abierto</a>
+                            <small><a class="link collapsed" data-toggle="collapse" href="#gob-ab"><span
+                                        class="glyphicon glyphicon-menu-right"></span></a></small>
+                        </div>
+                        <ul class="collapse" id="gob-ab">
+                            <li>
+                                <div class="link-box">
+                                    <a data-href="zaragoza.es/sede/" href="#">Datos Abiertos</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link-box">
+                                    <a data-href="zaragoza.es/sede/">Participacion y colaboracion</a>
+                                    <small><a class="link collapsed" data-toggle="collapse"
+                                            href="#participacion-colaboracion"><span
+                                                class="glyphicon glyphicon-menu-right"></span></a></small>
+                                </div>
+                                <ul class="collapse" id="participacion-colaboracion">
+                                    <li>
+                                        <div class="link-box">
+                                            <a data-href="zaragoza.es/sede/" href="#">Quejas y Sujerencias</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="link-box">
+                                            <a data-href="/ciudad/ayto/">Consejo de la ciudad</a>
+                                            <small><a class="link collapsed" data-toggle="collapse"
+                                                    href="#consejo-ciudad"><span
+                                                        class="glyphicon glyphicon-menu-right"></span></a></small>
+                                        </div>
+                                        <ul class="collapse" id="consejo-ciudad">
+                                            <li><a data-href="zaragoza.es/sede/" href="#">Consejos sectoriales</a></li>
+                                            <li><a data-href="zaragoza.es/sede/" href="#">Grupos de trabajo</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-href="zaragoza.es/sede/" href="#">En tu barrio</a></li>
+                                    <li>
+                                        <div class="link-box">
+                                            <a data-href="/ciudad/ayto/">Procesos participativos</a>
+                                            <small><a class="link collapsed" data-toggle="collapse"
+                                                    href="#procesos-participativos"><span
+                                                        class="glyphicon glyphicon-menu-right"></span></a></small>
+                                        </div>
+                                        <ul class="collapse" id="procesos-participativos">
+                                            <li><a data-href="zaragoza.es/sede/" href="#">Consulta Publica</a></li>
+                                            <li><a data-href="zaragoza.es/sede/" href="#">Encuestas</a></li>
+                                            <li><a data-href="zaragoza.es/sede/" href="#">Mis mapas, mis datos</a></li>
+                                            <li><a data-href="zaragoza.es/sede/" href="#">Procesos Cerrados</a></li>
+                                            <li><a data-href="zaragoza.es/sede/" href="#">Normativa</a></li>
+                                            <li><a data-href="zaragoza.es/sede/" href="#">Zona Personal</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a data-href="zaragoza.es/sede/" href="#">Entidades Ciudadanas</a></li>
+                                    <li><a data-href="zaragoza.es/sede/" href="#">Normativa</a></li>
+                                    <li><a data-href="zaragoza.es/sede/" href="#">Zona Personal</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Transparencia</a></li>
+                            <li>
+                                <div class="link-box">
+                                    <a data-href="/ciudad/ayto/">Formacion Digital</a>
+                                    <small><a class="link collapsed" data-toggle="collapse"
+                                            href="#Formacion-Digital"><span
+                                                class="glyphicon glyphicon-menu-right"></span></a></small>
+                                </div>
+                                <ul class="collapse" id="Formacion-Digital">
+                                    <li><a data-href="zaragoza.es/sede/" href="#">Identidad Digital</a></li>
+                                    <li><a data-href="zaragoza.es/sede/" href="#">Datos y Ciudad</a></li>
+                                    <li><a data-href="zaragoza.es/sede/" href="#">Transparencia</a></li>
+                                    <li><a data-href="zaragoza.es/sede/" href="#">Actividades Educativas</a></li>
+                                    <li><a data-href="zaragoza.es/sede/" href="#">Catedras</a></li>
+                                    <li><a data-href="zaragoza.es/sede/" href="#">Reutilizadores</a></li>
+                                </ul>
+                            </li>
+                            <li><a data-href="zaragoza.es/sede/" href="#">Carta derechos digitales</a></li>
+                            <li><a data-href="zaragoza.es/sede/" href="#">Portal del grupo de trabajo</a></li>
+                            <li><a data-href="zaragoza.es/sede/" href="#">Idea Zaragoza</a></li>
+                        </ul>
+                    </li>
+                    <li class="Ayuntamiento">
+                        <div class="link-box">
+                            <a data-href="/ciudad/ayto/" href="/ciudad/ayto/">Ayuntamiento</a>
+                            <small><a class="link collapsed" data-toggle="collapse" href="#Ayuntamiento"><span
+                                        class="glyphicon glyphicon-menu-right"></span></a></small>
+                        </div>
+                        <ul class="collapse" id="Ayuntamiento">
+                            <li><a data-href="/ciudad/ayto/" href="#">Alcalde</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Organizacion Municipal</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Normativa</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Igualdad</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">tramites y servicios</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">agua</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">abastecimiento de agua</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">saneamiento y depuracion</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">policia zaragoza</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">bomberos y proteccion civil</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">archivo, biblioteca, hemeroteca</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Hacienda y Economia</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Transparencia</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Contratacion Publica</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Premios y concursos</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Ayudas y Subvenciones</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Oferta de Empleo</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Tablon Municipal</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Tablon Edictos</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Calidad</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Noticias</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Otras Webs Municipales</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Quejas y Sugerencias</a></li>
+                        </ul>
+                    </li>
+                    <li class="Ciudad">
+                        <div class="link-box">
+                            <a data-href="/ciudad/ayto/" href="/ciudad/ayto/">Ciudad</a>
+                            <small><a class="link collapsed" data-toggle="collapse" href="#ciudad"><span
+                                        class="glyphicon glyphicon-menu-right"></span></a></small>
+                        </div>
+                        <ul class="collapse" id="ciudad">
+                            <li><a data-href="/ciudad/ayto/" href="#">Callejero</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Movilidad</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Sin Barreras</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Geoportal</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Medio Ambiente</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Parques, Jardines e infraestructuras</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Proteccion Animal</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Urbanismo</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Limpieza y residuos</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Salud Publica</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">voluntariado</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Equipamientos</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Observatorio estadistica</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Cementerios</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Deporte</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Educacion</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Educacion y Bibliotecas</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Mercados</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Consumo</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Zaragoza internacional</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Zaragoza visual</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Tu opinion importa</a></li>
+                        </ul>
+                    </li>
+                    <li class="Cultura">
+                        <div class="link-box">
+                            <a data-href="/ciudad/ayto/">Cultura</a>
+                            <small><a class="link collapsed" data-toggle="collapse" href="#Cultura"><span
+                                        class="glyphicon glyphicon-menu-right"></span></a></small>
+                        </div>
+                        <ul class="collapse" id="Cultura">
+                            <li><a data-href="/ciudad/ayto/" href="#">Quienes somos</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Participacion</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Profesional</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Social</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Suscribete</a></li>
+                            <li>
+                                <div class="link-box">
+                                    <a data-href="/ciudad/ayto/" href="#" class="group-node">Por Espacios</a>
+                                    <small><a class="link collapsed" data-toggle="collapse" href="#Por-Espacios"><span
+                                                class="glyphicon glyphicon-menu-right"></span></a></small>
+                                </div>
+                                <ul class="collapse" id="Por-Espacios">
+                                    <li><a data-href="/ciudad/ayto/" href="#">Auditorio</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Teatro Municipal</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Harinera</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Filmoteca</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Teatro del Mercado</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Centro de Historias</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Teatro de las esquinas</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Teatro de la estacion</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Teatro Arbolé</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Espacio Bebé</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Las Armas</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Etopia</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link-box">
+                                    <a data-href="/ciudad/ayto/" href="#" class="group-node">Museos</a>
+                                    <small><a class="link collapsed" data-toggle="collapse" href="#Museos"><span
+                                                class="glyphicon glyphicon-menu-right"></span></a></small>
+                                </div>
+                                <ul class="collapse" id="Museos">
+                                    <li><a data-href="/ciudad/ayto/" href="#">Teatro</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Termas</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Foro</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Puerto</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Pablo Gargallo</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Del Fuego y Bomberos</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link-box">
+                                    <a data-href="/ciudad/ayto/" href="#" class="group-node">Servicios</a>
+                                    <small><a class="link collapsed" data-toggle="collapse"
+                                            href="#Servicios-Cultura"><span
+                                                class="glyphicon glyphicon-menu-right"></span></a></small>
+                                </div>
+                                <ul class="collapse" id="Servicios-Cultura">
+                                    <li><a data-href="/ciudad/ayto/" href="#">Ayudas</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Convocatorias</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Perfil del Contratante</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Tramites y servicios</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Publicaciones</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link-box">
+                                    <a data-href="/ciudad/ayto/" href="#" class="group-node">Patrimonio</a>
+                                    <small><a class="link collapsed" data-toggle="collapse" href="#Patrimonio"><span
+                                                class="glyphicon glyphicon-menu-right"></span></a></small>
+                                </div>
+                                <ul class="collapse" id="Patrimonio">
+                                    <li><a data-href="/ciudad/ayto/" href="#">Edificios Historico-Artisticos</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Arte Publico</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Monumentos</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Arqueologia</a></li>
+                                    <li><a data-href="/ciudad/ayto/" href="#">Archivo, biblioteca, hemeroteca</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="Para la gente">
+                        <div class="link-box">
+                            <a data-href="/ciudad/ayto/">Para la gente</a>
+                            <small><a class="link collapsed" data-toggle="collapse" href="#Para-la-gente"><span
+                                        class="glyphicon glyphicon-menu-right"></span></a></small>
+                        </div>
+                        <ul class="collapse" id="Para-la-gente">
+                            <li><a data-href="/ciudad/ayto/" href="#">centros</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">tramites</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">publicaciones</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">memorias</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">normativa</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">participacion</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Servicios Sociales</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">Infancia</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">personas mayores</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">juventud</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">deporte</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">prevencion</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">alojamiento temporal</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">ciudad acogedora y multicultural</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">vivienda</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">educacion y bibliotecas</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">igualdad</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">empleo y emprendimiento</a></li>
+                            <li><a data-href="/ciudad/ayto/" href="#">personas con discapacidad</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
