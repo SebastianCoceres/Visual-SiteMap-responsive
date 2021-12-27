@@ -55,7 +55,6 @@ const isCollapsed = el => {
 
 function checkState() {
     setTimeout(function () {
-        console.log(arrayOpeners);
         if (arrayOpeners.every(isCollapsed)) {
             mainNode.classList.remove("hideCustome");
         } else if (arrayOpeners.some(isCollapsed)) {
