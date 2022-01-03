@@ -9,13 +9,20 @@
     --color-line: #ccc;
     --color-middle-node: #e2e2e2;
 
-    --item-width: 200px;
-    --item-gap: 20px;
+    --item-width: 30em;
+    --item-gap: 2em;
+}
+
+body {
+    width: 100%;
+}
+
+.input-group-btn {
+    width: auto !important;
 }
 
 .v-spacing {
     margin: var(--item-gap) 0;
-    
 }
 
 .input-group {
@@ -27,15 +34,15 @@
     top: 0;
 }
 
-.vsitemap .Gobierno-abierto a {
+.vsitemap li.Gobierno-abierto a {
     background: #606060;
 }
 
-.vsitemap .Ciudad a {
+.vsitemap li.Ciudad a {
     background: #226a00;
 }
 
-.vsitemap .Para.la.gente a {
+.vsitemap li.Para.la.gente a {
     background: #2e6b87;
 }
 
@@ -108,8 +115,7 @@
     padding: 0.5em;
     padding-right: 2em;
     border-radius: 3px;
-    /*width: var(--item-width)*/
-    ;
+    /*width: var(--item-width);*/
     transition: background-color 0.4s;
 
 }
@@ -198,7 +204,12 @@
 
 /* Responsive */
 /* tablet */
-@media only screen and (max-width: 768px) {
+@media(max-width: 768px) {
+    :root {
+        --item-width: 20em;
+        --item-gap: 1em;
+    }
+
     .vsitemap>ul>li>ul>li ul li {
         flex-direction: column;
     }
@@ -222,7 +233,7 @@
 }
 
 /* mobile */
-@media only screen and (max-width: 576px) {
+@media(max-width: 576px) {
     .vsitemap>ul>li ul li {
         flex-direction: column;
     }
